@@ -4,7 +4,7 @@ app_publisher = "HKuz"
 app_description = "Dummy ERPNext app to test Test Utils functionality"
 app_email = "heather.kusmierz@gmail.com"
 app_license = "mit"
-# required_apps = []
+required_apps = ["erpnext"]
 
 # Includes in <head>
 # ------------------
