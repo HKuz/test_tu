@@ -8,6 +8,7 @@ from frappe.desk.page.setup_wizard.setup_wizard import setup_complete
 from erpnext.setup.utils import enable_all_roles_and_domains, set_defaults_for_tests  # noqa: F401
 from erpnext.accounts.doctype.account.account import update_account_number
 
+from test_utils.utils.setup_fixtures import create_customers
 from test_utils.utils.chart_of_accounts import setup_chart_of_accounts, create_bank_and_bank_account
 
 
@@ -73,3 +74,4 @@ def create_test_data():
 	)
 	
 	create_bank_and_bank_account(settings)
+	create_customers(settings)
