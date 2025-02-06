@@ -8,7 +8,7 @@ python = ">=3.10,<3.14"
 readme = "README.md"
 dynamic = ["version"]
 dependencies = [
-    "test_utils @ git+https://github.com/hkuz/test_utils.git@py13_support",
+    "test_utils @ git+https://github.com/hkuz/test_utils.git@main",
 ]
 
 [build-system]
