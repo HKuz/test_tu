@@ -3,6 +3,10 @@ For license information, please see license.txt-->
 
 # Code Examples to Use and Test the Test Utils App
 
+<div class="byline">
+  Heather Kusmierz 2025-09-09
+</div>
+
 ## Pre-Commit Hooks
 
 To use a pre-commit hook from Test Utils, add a section for the repo in the `.pre-commit-config.yaml` file, then add the `id` of any hook you'd like to run.
@@ -43,6 +47,8 @@ If you're testing a hook in a branch that hasn't been merged into the default br
 ## Using Test Fixtures
 
 Below is an example that uses functions from Test Utils to set up an IFRS Chart of Accounts for the test company, create a bank and bank account, and create customers in the test data.
+
+See the `test_utils/utils/setup_fixtures.py` [file](https://github.com/agritheory/test_utils/blob/main/test_utils/utils/setup_fixtures.py) for more options.
 
 ```py
 # In the tests/setup.py file
