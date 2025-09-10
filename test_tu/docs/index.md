@@ -53,6 +53,7 @@ See the `test_utils/utils/setup_fixtures.py` [file](https://github.com/agritheor
 ```py
 # In the tests/setup.py file
 import frappe
+
 from test_utils.utils.setup_fixtures import create_customers
 from test_utils.utils.chart_of_accounts import setup_chart_of_accounts, create_bank_and_bank_account
 
