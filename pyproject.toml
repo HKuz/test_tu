@@ -6,7 +6,7 @@ authors = [
 description = "Dummy ERPNext app to test Test Utils functionality"
 readme = "README.md"
 requires-python = ">=3.10"
-dynamic = ["dependencies", "version"]
+dynamic = ["version"]
 
 [build-system]
 requires = ["flit_core >=3.4,<4"]
