@@ -4,17 +4,23 @@ authors = [
     { name = "HKuz", email = "heather.kusmierz@gmail.com"}
 ]
 description = "Dummy ERPNext app to test Test Utils functionality"
-python = ">=3.10,<3.14"
 readme = "README.md"
-dynamic = ["version"]
-dependencies = [
-    "test_utils @ git+https://github.com/hkuz/test_utils.git@main",
-]
+requires-python = ">=3.10"
+dynamic = ["dependencies", "version"]
 
 [build-system]
 requires = ["flit_core >=3.4,<4"]
 build-backend = "flit_core.buildapi"
 
-# These dependencies are only installed when developer mode is enabled
-[tool.bench.dev-dependencies]
-# package_name = "~=1.1.0"
+[tool.poetry]
+version = "0.0.1"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.15"
+test_utils = {git = "https://github.com/hkuz/test_utils.git"}
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^9.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
